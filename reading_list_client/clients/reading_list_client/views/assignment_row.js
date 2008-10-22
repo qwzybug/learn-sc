@@ -18,20 +18,16 @@ ReadingListClient.AssignmentRowView = SC.View.extend(
 	render: function() {
 		var content = this.get('content') ;
 		
-		// var html = content.get('title') + ", " + content.get('author') ;		
-		
-		this.get('label').set('value', "FOO");
+		var attribution = content.get('title') + ", " + content.get('author') ;
+		this.get('label').set('value', attribution) ;
 	}.observes('content'),
 	
 	init: function() {
-		var checkbox = SC.CheckboxFieldView.create() ;
-		var label = SC.LabelView.create() ;
+		this.set('checkbox', SC.CheckboxView.create()) ;
+		this.set('label', SC.LabelView.create()) ;
 		
-		this.set('checkbox', checkbox) ;
-		this.set('label', label) ;
-		
-		this.appendChild(checkbox) ;
-		this.appendChild(label) ;
+		this.appendChild(this.get('checkbox')) ;
+		this.appendChild(this.get('label')) ;
 	}
 
 }) ;
