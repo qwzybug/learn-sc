@@ -1,0 +1,14 @@
+I'm learning SproutCore. Follow my babysteps like so:
+
+1. In reading_list_server, run
+rake db:migrate
+rake db:fixtures:load
+script/server
+
+2. In reading_list_client,
+sc-server
+
+3. Visit http://localhost:4020/reading_list_client and be amazed at how
+little works.
+
+Whee!
