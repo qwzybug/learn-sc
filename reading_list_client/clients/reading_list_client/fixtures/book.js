@@ -6,38 +6,17 @@ require('core') ;
 
 ReadingListClient.FIXTURES = ReadingListClient.FIXTURES.concat([
 
-  // TODO: Add your data fixtures here.
-  // All fixture records must have a unique guid and a type matching the
-  // name of your contact.  See the example below.
-
-  // { guid: 1,
-  //   type: 'Contact',
-  //   firstName: "Michael",
-  //   lastName: "Scott"
-  // },
-  //
-  // { guid: 2,
-  //   type: 'Contact',
-  //   firstName: "Dwight",
-  //   lastName: "Schrute"
-  // },
-  //
-  // { guid: 3,
-  //   type: 'Contact',
-  //   firstName: "Jim",
-  //   lastName: "Halpert"
-  // },
-  //
-  // { guid: 4,
-  //   type: 'Contact',
-  //   firstName: "Pam",
-  //   lastName: "Beesly"
-  // },
-  //
-  // { guid: 5,
-  //   type: 'Contact',
-  //   firstName: "Ryan",
-  //   lastName: "Howard"
-  // }
+	{ guid: 1, type: 'Book',
+		title: "The Great Gatsby",
+		author: "F. Scott Fitzgerald" },
+	{ guid: 2, type: 'Book',
+		title: "I Am America (And So Can You)",
+		author: "Stephen Colbert" },
+	{ guid: 3, type: 'Book',
+		title: "Symposium",
+		author: "Plato" }
+	{ guid: 4, type: 'Book',
+		title: "Tom Jones",
+		author: "Henry Fielding" }
 
 ]);

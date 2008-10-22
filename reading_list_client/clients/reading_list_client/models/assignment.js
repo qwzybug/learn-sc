@@ -17,7 +17,7 @@ ReadingListClient.Assignment = SC.Record.extend(
 
 	dataSource: ReadingListClient.server,
 	resourceURL: '/sc/assignments',
-	properties: ['book_id', 'student_id'],
+	properties: ['book', 'student'],
 	primaryKey: ['guid'],
 	
 	bookType: 'ReadingListClient.Book',

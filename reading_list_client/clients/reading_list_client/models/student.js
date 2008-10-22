@@ -20,6 +20,6 @@ ReadingListClient.Student = SC.Record.extend(
 	properties: ['name'],
 	primaryKey: ['guid'],
 	
-	assignments: SC.Record.hasMany('ReadingListClient.Assignment', 'studentID')
+	assignments: SC.Record.hasMany('ReadingListClient.Assignment', 'student')
 
 }) ;
