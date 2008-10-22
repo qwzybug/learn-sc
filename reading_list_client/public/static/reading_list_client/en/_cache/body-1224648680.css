@@ -1,0 +1,15 @@
+/* Start ----------------------------------------------------- body.css*/
+
+.student_list {
+ position: absolute;
+ left:  0;
+ top:  0;
+ right: 0;
+ bottom: 0;
+}
+
+.sc-scroll-view { position: absolute; }
+
+
+/* End ------------------------------------------------------- body.css*/
+

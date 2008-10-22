@@ -1,0 +1,23 @@
+/* Start ----------------------------------------------------- body.css*/
+
+.workspace .sidebar {
+ position: absolute;
+ left:  0;
+ top:  0;
+ width: 200px;
+ bottom: 0;
+}
+
+.workspace .sidebar .student_list {
+ position: absolute;
+ left:  0;
+ top:  0;
+ right: 0;
+ bottom: 0;
+}
+
+.sc-scroll-view { position: absolute; }
+.student_list_view { width: 100%; }
+
+/* End ------------------------------------------------------- body.css*/
+

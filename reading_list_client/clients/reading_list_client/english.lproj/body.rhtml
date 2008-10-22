@@ -1,0 +1,41 @@
+<% content_for('body') do %>
+
+<% split_view :workspace, :class => 'sc-app-workspace', :direction => :horizontal do %>
+  <% view :sidebar do %>
+    <% scroll_view :student_list do %>
+      <%= list_view :student_list_view,
+                    :content_value_key => 'name',
+                    :content_value_editable => true,
+                    :can_reorder_content => true,
+                    :height => 25,
+                    :bind => {
+                      :content => 'ReadingListClient.studentsController.arrangedObjects',
+                      :selection => 'ReadingListClient.studentsController.selection'
+                    } %>
+    <% end %>
+  <% end %>
+  
+  <%= split_divider_view :width => 5 %>
+  
+  <% view :detail_view do %>
+  
+    <h1><%= label_view :student_name,
+                       :bind => {:content => 'ReadingListClient.studentController'},
+                       :content_value_key => 'name' %></h1>
+    
+    <% scroll_view :book_list do %>
+      <%= list_view :book_list_view,
+                    :content_value_key => 'title',
+                    :content_value_editable => false,
+                    :can_reorder_content => false,
+                    :height => 25,
+                    # :example_view => 'ReadingListClient.AssignmentRowView',
+                    :bind => {
+                      :content => 'ReadingListClient.booksController.arrangedObjects',
+                    }%>
+    <% end %>
+  <% end %>
+  
+<% end %>
+
+<% end %>

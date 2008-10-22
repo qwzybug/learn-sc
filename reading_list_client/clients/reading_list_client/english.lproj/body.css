@@ -1,0 +1,17 @@
+.student_list {
+ position: absolute;
+ left:  0;
+ top:  0;
+ right: 0;
+ bottom: 0;
+}
+
+.detail_view {
+	padding: 1em;
+}
+
+.book_list {
+	position: relative;
+	width: 300px;
+	height: 250px;
+}

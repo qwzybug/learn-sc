@@ -1,0 +1,23 @@
+james_gatsby:
+  book: gatsby
+  student: james
+
+james_colbert:
+  book: america
+  student: james
+
+sara_plato:
+  book: symposium
+  student: sara
+
+sara_jones:
+  book: jones
+  student: sara
+
+roger_colbert:
+  book: america
+  student: roger
+
+roger_plato:
+  book: symposium
+  student: roger
