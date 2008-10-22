@@ -20,6 +20,9 @@ ReadingListClient.AssignmentRowView = SC.View.extend(
 		
 		var attribution = content.get('title') + ", " + content.get('author') ;
 		this.get('label').set('value', attribution) ;
+		
+		var assigned = ReadingListClient.studentController.get('books').include(content);
+		this.get('checkbox').set('value', assigned);
 	}.observes('content'),
 	
 	init: function() {

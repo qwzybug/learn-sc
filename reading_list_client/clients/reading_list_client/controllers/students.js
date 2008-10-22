@@ -15,4 +15,5 @@ require('core');
 */
 ReadingListClient.studentsController = SC.CollectionController.create(
 /** @scope ReadingListClient.studentsController */ {
+	allowsMultipleSelection: NO
 }) ;

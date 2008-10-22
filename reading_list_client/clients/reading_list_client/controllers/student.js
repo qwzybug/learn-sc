@@ -16,6 +16,13 @@ require('core');
 ReadingListClient.studentController = SC.ObjectController.create(
 /** @scope ReadingListClient.studentController */ {
 
-  contentBinding: 'ReadingListClient.studentsController.selection'
+  contentBinding: 'ReadingListClient.studentsController.selection',
+	contentBindingDefault: SC.Binding.Single,
+	
+	books: function() {
+		if (this.get('content')) {
+			return this.get('assignments').records().get('book');
+		}
+	}.property('content')
 
 }) ;
