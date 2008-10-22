@@ -15,8 +15,8 @@ require('core');
 ReadingListClient.Assignment = SC.Record.extend(
 /** @scope ReadingListClient.Assignment.prototype */ {
 
-	dataSource: ReadingListClient.server,
-	resourceURL: '/sc/assignments',
+	// dataSource: ReadingListClient.server,
+	// resourceURL: '/sc/assignments',
 	properties: ['book', 'student'],
 	primaryKey: ['guid'],
 	

@@ -15,8 +15,8 @@ require('core');
 ReadingListClient.Student = SC.Record.extend(
 /** @scope ReadingListClient.Student.prototype */ {
 
- 	dataSource: ReadingListClient.server,
-	resourceURL: '/sc/students',
+	//  	dataSource: ReadingListClient.server,
+	// resourceURL: '/sc/students',
 	properties: ['name'],
 	primaryKey: ['guid'],
 	

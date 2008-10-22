@@ -25,14 +25,15 @@
     
     <% scroll_view :book_list do %>
       <%= list_view :book_list_view,
-                    :content_value_key => 'title',
+                    :content_value_key => 'attribution',
+                    :content_checkbox_key => 'assigned',
                     :content_value_editable => false,
                     :can_reorder_content => false,
                     :height => 25,
-                    :example_view => 'ReadingListClient.AssignmentRowView',
+                    :example_view => 'SC.ListItemView',
                     :bind => {
-                      :content => 'ReadingListClient.booksController.arrangedObjects',
-                    }%>
+                      :content => 'ReadingListClient.studentAssignmentsController.booksAndAssignments'
+                    } %>
     <% end %>
   <% end %>
   
