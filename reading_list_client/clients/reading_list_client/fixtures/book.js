@@ -14,7 +14,7 @@ ReadingListClient.FIXTURES = ReadingListClient.FIXTURES.concat([
 		author: "Stephen Colbert" },
 	{ guid: 3, type: 'Book',
 		title: "Symposium",
-		author: "Plato" }
+		author: "Plato" },
 	{ guid: 4, type: 'Book',
 		title: "Tom Jones",
 		author: "Henry Fielding" }

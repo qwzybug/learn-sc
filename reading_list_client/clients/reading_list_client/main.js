@@ -15,9 +15,9 @@ function main() {
   // The default code here will load the fixtures you have defined.
   // Comment out the preload line and add something to refresh from the server
   // when you are ready to pull data from your server.
-  // ReadingListClient.server.preload(ReadingListClient.FIXTURES) ;
-	ReadingListClient.server.listFor({recordType: ReadingListClient.Student}) ;
-	ReadingListClient.server.listFor({recordType: ReadingListClient.Book})
+  ReadingListClient.server.preload(ReadingListClient.FIXTURES) ;
+	// ReadingListClient.server.listFor({recordType: ReadingListClient.Student}) ;
+	// ReadingListClient.server.listFor({recordType: ReadingListClient.Book})
 
   // TODO: refresh() any collections you have created to get their records.
   // ex: ReadingListClient.contacts.refresh() ;
