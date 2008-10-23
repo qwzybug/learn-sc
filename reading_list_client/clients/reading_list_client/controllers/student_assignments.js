@@ -37,7 +37,7 @@ ReadingListClient.studentAssignmentsController = SC.CollectionController.create(
 		if (sender.get('assigned')) {
 			console.log("Assigning '%@' to %@".fmt(sender.getPath('book.title'), sender.getPath('student.name')) ) ;
 			ReadingListClient.Assignment.newRecord({ book: sender.get('book'),
-																					  student: sender.get('student') }).commit() ;
+																					  student: sender.get('student') }) ;
 		} else {
 			console.log("Unassigning '%@' from %@".fmt(sender.getPath('book.title'), sender.getPath('student.name')) ) ;
 			ReadingListClient.Assignment.find({ book: sender.get('book'),
